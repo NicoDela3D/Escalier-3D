@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="https://www.dropbox.com/scl/fi/9gx39dbyxxnnh8dnitoim/styles.css?raw=1" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="https://www.dropbox.com/s/x2rzfdyxzqf4ze0wv6yjk/Base.glb?raw=1" 
+                  ar ar-modes="webxr scene-viewer quick-look" 
+                  camera-controls 
+                  tone-mapping="neutral" 
+                  poster="https://www.dropbox.com/scl/fi/9igifq7vod2jviact63dc/poster.webp?raw=1" 
+                  shadow-intensity="1" 
+                  environment-image="https://www.dropbox.com/scl/fi/jehc8z1bk1lwec46a39t7/abandoned_tank_farm_04_2k-1.hdr?raw=1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="https://www.dropbox.com/scl/fi/rh87c14qjgndzoz8p8hq0/ar_hand_prompt.png?raw=1">
+      </div>
+    </model-viewer>  
+    <script src="https://www.dropbox.com/scl/fi/pztzherjlnbh3dvtva2ku/script.js?raw=1"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
